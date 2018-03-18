@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# ARGV processing
 for i in "$@"
 do
 case $i in
