@@ -5,7 +5,7 @@ module CustomPrime
     raise Exception.new('Number not greater than 1') if int_value <= 1
     (2..int_value - 1).each do |divisor|
       if int_value % divisor == 0
-        # Stop and not fo further if a divisor is found
+        # Stop and not go further if a divisor is found
         return divisor
       end
     end
