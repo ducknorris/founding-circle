@@ -22,8 +22,8 @@ Write a program that prints out a multiplication table of the first 10 prime num
 
 In order to run the script or the tests you have two options:
 
-* either you use Docker
-* or you use your local Ruby (via rbenv or RVM)
+1. You use Docker
+2. You use your local Ruby (via rbenv or RVM)
 
 I'll only cover the Docker option as the other one it's pretty much very dependable on your local environment.
 
