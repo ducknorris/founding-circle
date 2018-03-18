@@ -11,7 +11,7 @@ describe CustomPrime do
 
   describe '#smallest_divisor' do
     it 'raise error if number not greater than 1' do
-      expect { 1.smallest_divisor }.to raise_error(Exception).with_message('Number not greater than 1')
+      expect{ 1.smallest_divisor }.to raise_error(Exception).with_message('Number not greater than 1')
     end
 
     it 'returns nil for a number that has no other divisors other than 1 and self' do
