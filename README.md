@@ -1,4 +1,4 @@
-# Founding Circle - Coding Challenge
+# Funding Circle - Coding Challenge
 
 ### Objective
 
