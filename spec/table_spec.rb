@@ -2,6 +2,16 @@ require 'spec_helper'
 require_relative '../lib/table'
 
 describe Table do
+  describe '.generate_primez' do
+    it 'generates array of prime numbers with size of 5' do
+      expect(Table.generate_primez(5).size).to eq(5)
+    end
+
+    it 'generates array of first 5 prime numbers' do
+      expect(Table.generate_primez(5)).to eq([2, 3, 5, 7, 11])
+    end
+  end
+
   describe '.generate_primes' do
     it 'generates array of prime numbers with size of 5' do
       expect(Table.generate_primes(5).size).to eq(5)

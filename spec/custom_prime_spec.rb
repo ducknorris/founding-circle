@@ -7,6 +7,7 @@ describe CustomPrime do
 
     it { expect(num).to respond_to(:smallest_divisor) }
     it { expect(num).to respond_to(:is_prime?) }
+    it { expect(num).to respond_to(:is_primez?) }
   end
 
   describe '#smallest_divisor' do
@@ -30,6 +31,16 @@ describe CustomPrime do
 
     it 'returns false for not a prime number' do
       expect(422.is_prime?).to be_falsey
+    end
+  end
+
+  describe '#is_primez?' do
+    it 'returns true for a prime number' do
+      expect(19.is_primez?).to be_truthy
+    end
+
+    it 'returns false for not a prime number' do
+      expect(422.is_primez?).to be_falsey
     end
   end
 end

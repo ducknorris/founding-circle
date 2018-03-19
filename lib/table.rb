@@ -1,6 +1,18 @@
 require_relative 'custom_prime'
 
 class Table
+  # This alternate method is using Sieve of Eratosthenes implementation from CustomPrime.
+  # I didn't used it in the end for the table generation.
+  def self.generate_primez(n)
+    arr = []
+    i = 2
+    while arr.size < n
+      arr << i if i.is_primez?
+      i += 1
+    end
+    return arr
+  end
+
   def self.generate_primes(n)
     arr = []
     i = 2
@@ -12,7 +24,7 @@ class Table
   end
 
   def self.generate_table(n)
-    rows_or_cols = generate_primes(n)
+    rows_or_cols = generate_primez(n)
     output = []
     output << "\n"
     output << "Multiplication table for the first #{n} prime numbers\n\n"
