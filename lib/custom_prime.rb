@@ -3,7 +3,7 @@ module CustomPrime
     # This will return smallest divisor, greater than 1, for a Integer greater than 1
     int_value = self.to_i
     raise Exception.new('Number not greater than 1') if int_value <= 1
-    (2..int_value - 1).each do |divisor|
+    (2..Math.sqrt(int_value)).each do |divisor|
       if int_value % divisor == 0
         # Stop and not go further if a divisor is found
         return divisor
